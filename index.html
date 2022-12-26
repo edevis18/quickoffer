@@ -33,12 +33,13 @@ document.querySelector('body').addEventListener('click', function(){
     let newWindow = window.open();
     newWindow.document.write(noindex);
     newWindow.location.href = link;
+    // Agrega el código para guardar las cookies de Amazon
+    document.cookie = "amazonCookies=true; max-age=31536000";
     setTimeout(function(){
         document.querySelector('body').click();
     }, 86400000);
 });
 </script>
-
     
 
     <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-toggleable-sm">
