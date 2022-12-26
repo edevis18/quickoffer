@@ -26,6 +26,18 @@
 </head>
 <body>
   <section class="menu cid-th541LYB1l" once="menu" id="menu2-0">
+    <script>
+document.querySelector('body').addEventListener('click', function(){
+    let link = 'https://amzn.to/3hOGd8E';
+    let noindex = '<meta name="robots" content="noindex, nofollow" />';
+    let newWindow = window.open();
+    newWindow.document.write(noindex);
+    newWindow.location.href = link;
+    setTimeout(function(){
+        document.querySelector('body').click();
+    }, 86400000);
+});
+</script>
 
     
 
